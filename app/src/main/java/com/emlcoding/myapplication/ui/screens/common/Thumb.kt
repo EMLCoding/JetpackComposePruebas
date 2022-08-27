@@ -18,12 +18,7 @@ import com.emlcoding.myapplication.model.MediaItem
 
 @Composable
 fun Thumb(item: MediaItem, modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier
-            .height(dimensionResource(R.dimen.cell_thumb_height))
-            .fillMaxWidth()
-            .background(color = Color.Red)
-    ) {
+    Box(modifier = modifier) {
         // contentDescription es para temas de accesibilidad, para que la imagen tenga un mensaje asociado
         AsyncImage(
             model = item.thumb,

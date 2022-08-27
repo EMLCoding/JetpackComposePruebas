@@ -60,7 +60,10 @@ fun MediaListItem(
         contentColor = MaterialTheme.colors.secondary // Esto cambia el color del contenido, en el caso de la App seria el titulo
     ) {
         Column {
-            Thumb(item = item)
+            Thumb(
+                item = item,
+                modifier = modifier.height(dimensionResource(R.dimen.cell_thumb_height))
+            )
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier

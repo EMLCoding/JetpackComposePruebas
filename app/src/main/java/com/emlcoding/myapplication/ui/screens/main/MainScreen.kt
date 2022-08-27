@@ -42,10 +42,7 @@ fun MainScreen(onMediaClick: (MediaItem) -> Unit) {
                 MainAppBar()
             }
         ) { padding ->
-            MediaList(
-                onMediaClick = onMediaClick,
-                modifier = Modifier.padding(padding)
-            )
+            MainContent(onMediaClick = onMediaClick, modifier = Modifier.padding(padding))
         }
     }
 
